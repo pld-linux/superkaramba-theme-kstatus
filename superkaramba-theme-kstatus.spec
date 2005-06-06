@@ -12,6 +12,7 @@ Source0:	http://www.kde-look.org/content/files/19827-%{theme}-%{version}.tar.gz
 # Source0-md5:	7c516813edfbcb93178a1316e8d11ea7
 URL:		http://karraskal.deviantart.com
 Requires:	superkaramba >= 0.36
+BuildRequires:  sed >= 4.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define 	_kstatusdir 	/themes/superkaramba/kstatus
@@ -48,12 +49,18 @@ Motyw kstatus dla superkaramby. Wy¶wietlane informacje :
 %prep
 %setup -q -n %{theme}
 
+# theme modified to white/black font
+cp kstatus.theme kstatus-white.theme
+mv kstatus.theme kstatus-black.theme
+%{__sed} -i 's/0,0,0/255,255,255/' kstatus-white.theme
+%{__sed} -i 's/1,1,1/254,254,254/' kstatus-white.theme
+
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}%{_kstatusdir} \
 	$RPM_BUILD_ROOT%{_datadir}%{_kstatusdir}/{fonts,umicons}
 
-install {changelog,kstatus.theme,*.png} $RPM_BUILD_ROOT%{_datadir}%{_kstatusdir}
+install {changelog,kstatus-{white,black}.theme,*.png} $RPM_BUILD_ROOT%{_datadir}%{_kstatusdir}
 install fonts/*.ttf $RPM_BUILD_ROOT%{_datadir}%{_kstatusdir}/fonts
 install umicons/*.png $RPM_BUILD_ROOT%{_datadir}%{_kstatusdir}/umicons
 
