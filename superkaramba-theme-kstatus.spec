@@ -10,7 +10,7 @@ License:	GPL
 Group:		Themes
 Source0:	http://www.kde-look.org/content/files/19827-%{theme}-%{version}.tar.gz
 # Source0-md5:	7c516813edfbcb93178a1316e8d11ea7
-URL:		http://karraskal.deviantart.com
+URL:		http://karraskal.deviantart.com/
 Requires:	superkaramba >= 0.36
 BuildRequires:  sed >= 4.0
 BuildArch:	noarch
