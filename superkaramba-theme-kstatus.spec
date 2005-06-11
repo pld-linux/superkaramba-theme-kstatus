@@ -15,6 +15,7 @@ Requires:	superkaramba >= 0.36
 BuildRequires:  sed >= 4.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
 %define 	_kstatusdir 	/themes/superkaramba/kstatus
 
 %description
@@ -35,16 +36,16 @@ kstatus theme for superkaramba. Features :
 %description -l pl
 Motyw kstatus dla superkaramby. Wy¶wietlane informacje :
  - User@hostname
- - Wersja kernela
+ - Wersja j±dra
  - Wersja KDE
  - Obci±¿enie procesora
  - Model / zegar / cache procesora
- - Obci±¿enie pamiêci RAM i pliku wymiany
+ - Wykorzystanie pamiêci RAM i pliku wymiany
  - Monitor dysków
  - Monitor sieci
  - Uptime, czas, data
  - XMMS - info o odtwarzanej ¶cie¿ce
- - Kontrolki XMMS
+ - Kontrolki XMMS (przewijanie, odtwarzanie, stop, pauza)
 
 %prep
 %setup -q -n %{theme}
