@@ -2,7 +2,7 @@
 %define		theme	kstatus
 
 Summary:	superkaramba - kstatus theme
-Summary(pl):	superkaramba - motyw kstatus
+Summary(pl.UTF-8):   superkaramba - motyw kstatus
 Name:		superkaramba-theme-%{theme}
 Version:	1.1
 Release:	1
@@ -33,18 +33,18 @@ kstatus theme for superkaramba. Features :
  - XMMS - Currently Playing and Time of Track Information
  - XMMS Controls - Skip back, Play, Stop, Pause and Skip Forward
 
-%description -l pl
-Motyw kstatus dla superkaramby. Wy¶wietlane informacje :
+%description -l pl.UTF-8
+Motyw kstatus dla superkaramby. WyÅ›wietlane informacje :
  - User@hostname
- - Wersja j±dra
+ - Wersja jÄ…dra
  - Wersja KDE
- - Obci±¿enie procesora
+ - ObciÄ…Å¼enie procesora
  - Model / zegar / cache procesora
- - Wykorzystanie pamiêci RAM i pliku wymiany
- - Monitor dysków
+ - Wykorzystanie pamiÄ™ci RAM i pliku wymiany
+ - Monitor dyskÃ³w
  - Monitor sieci
  - Uptime, czas, data
- - XMMS - info o odtwarzanej ¶cie¿ce
+ - XMMS - info o odtwarzanej Å›cieÅ¼ce
  - Kontrolki XMMS (przewijanie, odtwarzanie, stop, pauza)
 
 %prep
