@@ -2,7 +2,7 @@
 %define		theme	kstatus
 
 Summary:	superkaramba - kstatus theme
-Summary(pl.UTF-8):   superkaramba - motyw kstatus
+Summary(pl.UTF-8):	superkaramba - motyw kstatus
 Name:		superkaramba-theme-%{theme}
 Version:	1.1
 Release:	1
